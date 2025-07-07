@@ -30,7 +30,7 @@ public class Book {
 
     // Add discount
     public void applyDiscount(double discountPercent){
-        if(discountPercent<0 || discountPercent >=100){// invalid discount
+        if(discountPercent<=0 || discountPercent >=100){// invalid discount
             System.out.println("Error Discount range");
         }
         else{ // valid
