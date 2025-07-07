@@ -27,4 +27,14 @@ public class Book {
     public void updatePrice(double newPrice) {
         if(newPrice>=0)  this.price = newPrice;
     }
+
+    // Add discount
+    public void applyDiscount(double discountPercent){
+        if(discountPercent<0 || discountPercent >=100){
+            System.out.println("Error Discount range");
+        }
+        else{
+            this.price -= this.price*(discountPercent/100);
+        }
+    }
 }
